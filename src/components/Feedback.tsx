@@ -15,8 +15,8 @@ function ShareYourThoughtsModal() {
 
   const content = "Love It? Star It! ★"
 
-  
-    // Maybe AB TEST
+
+  // Maybe AB TEST
   // Suggest Features
   // Give Feedback
   // Share Your Thoughts
@@ -24,11 +24,12 @@ function ShareYourThoughtsModal() {
   return (
     <>
 
-      <EuiHeaderLink 
-      href={'https://github.com/omkarcloud/devtools'}
-      // onClick={toggleModal}
-       color="primary">{content}</EuiHeaderLink>
-      
+      <EuiHeaderLink
+        target='_blank'
+        href={'https://github.com/omkarcloud/devtools'}
+        // onClick={toggleModal}
+        color="primary">{content}</EuiHeaderLink>
+
     </>
   )
 }
