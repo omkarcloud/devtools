@@ -12,7 +12,7 @@ function generateSiteMap(posts) {
         links.map(
           url => `
       <url>
-          <loc>https://${Config.DOMAIN_NAME}${url.path}</loc>
+          <loc>https://${Config.DOMAIN_NAME}/devtools${url.path}</loc>
       </url>
     `)
         .join('')}
