@@ -1,8 +1,8 @@
 import Seo from '../../components/Seo'
 import { useEffect, useState } from 'react'
-import UnAuthedLanding from '../../layouts/UnAuthedLanding'
+
 import { H1Text } from '../../components/H1Text'
-import AuthedDashboard from '../../layouts/AuthedDashboard'
+
 import { EuiButton, EuiCard, EuiFormRow } from '@elastic/eui'
 import TextField from '../../components/inputs/TextField'
 import Hooks from '@omkar111111/utils/hooks'

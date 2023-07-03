@@ -1,8 +1,9 @@
+import ToolsDashboard from '../../layouts/ToolsDashboard'
 import Seo from '../../components/Seo'
 import { useState } from 'react'
-import UnAuthedLanding from '../../layouts/UnAuthedLanding'
+
 import { H1Text } from '../../components/H1Text'
-import AuthedDashboard from '../../layouts/AuthedDashboard'
+
 import { EuiButton, EuiCard, EuiFormRow, formatDate } from '@elastic/eui'
 import Hooks from '@omkar111111/utils/hooks'
 import { OutputTextAreaField } from '../../components/inputs/outputs'
@@ -79,8 +80,8 @@ const Content = () => {
 
 
 
-const Page = ({ is_authenticated }) => {
-    const Component = is_authenticated ? AuthedDashboard : UnAuthedLanding
+const Page = () => {
+    const Component = ToolsDashboard
 
     return (
         <>

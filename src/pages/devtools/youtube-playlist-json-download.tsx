@@ -9,7 +9,7 @@ import {
     EuiCard,
     EuiText,
 } from '@elastic/eui'
-import UnAuthedLanding from '../../layouts/UnAuthedLanding'
+
 import { H1Text } from '../../components/H1Text'
 import { isEmptyString } from '../../utils/data/validators'
 import Api from '../../utils/api'

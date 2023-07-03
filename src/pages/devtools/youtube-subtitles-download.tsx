@@ -9,12 +9,11 @@ import {
     EuiCard,
     EuiText,
 } from '@elastic/eui'
-import UnAuthedLanding from '../../layouts/UnAuthedLanding'
+
 import { H1Text } from '../../components/H1Text'
 import { isEmptyString } from '../../utils/data/validators'
 import Api from '../../utils/api'
 import Messages from '../../utils/messages'
-import { } from '../../utils/data/faq'
 import YoutubeDashboard from '../../layouts/YouTubeDashboard'
 import useAxios, { useLazyAxios } from '../../utils/axios/use-axios'
 import CenteredSpinner from '../../components/CenteredSpinner'

@@ -1,9 +1,10 @@
+import ToolsDashboard from '../../layouts/ToolsDashboard'
 import NumberField from '../../components/inputs/NumberField'
 import Seo from '../../components/Seo'
 import { useState } from 'react'
-import UnAuthedLanding from '../../layouts/UnAuthedLanding'
+
 import { H1Text } from '../../components/H1Text'
-import AuthedDashboard from '../../layouts/AuthedDashboard'
+
 
 import { EuiBasicTable, EuiCard, EuiFormRow } from '@elastic/eui'
 import React from 'react'
@@ -208,8 +209,8 @@ const Content = () => {
 
 
 
-const Page = ({ is_authenticated }) => {
-    const Component = is_authenticated ? AuthedDashboard : UnAuthedLanding
+const Page = () => {
+    const Component = ToolsDashboard
 
     return (
         <>

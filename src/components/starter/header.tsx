@@ -40,6 +40,74 @@ function HeaderLogo({ white = false }) {
 
 
 
+export const YouTubeHeader = () => {
+  const guideHeaderCollapsibleNavId = useGeneratedHtmlId({
+    prefix: 'guideHeaderCollapsibleNav',
+  })
+  const [navIsOpen, setNavIsOpen] = useState(false)
+
+  const collapsibleNav = (
+    <EuiCollapsibleNav
+      id={guideHeaderCollapsibleNavId}
+      aria-label="Main navigation"
+      isOpen={navIsOpen}
+      isDocked={true}
+      button={
+        <EuiHeaderSectionItemButton
+          aria-label="Toggle main navigation"
+          onClick={() => setNavIsOpen(!navIsOpen)}>
+          <EuiIcon type={'menu'} size="m" aria-hidden="true" />
+        </EuiHeaderSectionItemButton>
+      }
+      onClose={() => setNavIsOpen(false)}>
+      <EuiFlexItem className="eui-yScroll">
+        <EuiCollapsibleNavGroup className="h-full child-h-full" background="none">
+          <EuiListGroup
+            maxWidth="none"
+            color="subdued"
+            gutterSize="none"
+            size="s">
+            <Link href={tools[0].path} passHref>
+              <EuiListGroupItem className="font-bold"  label={tools[0].title} />
+            </Link>
+            <Link href={tools[1].path} passHref>
+              <EuiListGroupItem className="font-bold"  label={tools[1].title} />
+            </Link>
+            <Link href={tools[2].path} passHref>
+              <EuiListGroupItem className="font-bold"  label={tools[2].title} />
+            </Link>
+          </EuiListGroup>
+        </EuiCollapsibleNavGroup>
+      </EuiFlexItem>
+    </EuiCollapsibleNav>
+  )
+
+  return (
+    <>
+      <EuiHeader
+        role='navigation'
+        position="fixed"
+        theme="dark"
+        sections={[
+          {
+            items: [
+              collapsibleNav,
+              <div className="w-6" />,
+              <HeaderLogo white />,
+            ],
+            borders: 'none',
+          },
+          {
+            items: [
+              <GiveFeedback key="feedback" />
+            ],
+            borders: 'none',
+          },
+        ]}
+      />
+    </>
+  )
+}
 
 
 export const ToolsHeader = () => {

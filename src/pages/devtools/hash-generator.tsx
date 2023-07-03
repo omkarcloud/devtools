@@ -1,8 +1,8 @@
 import Seo from '../../components/Seo'
 import { useEffect, useState } from 'react'
-import UnAuthedLanding from '../../layouts/UnAuthedLanding'
+
 import { H1Text } from '../../components/H1Text'
-import AuthedDashboard from '../../layouts/AuthedDashboard'
+
 
 import TextAreaField from '../../components/inputs/TextAreaField'
 import { EuiCard, EuiFormRow } from '@elastic/eui'
