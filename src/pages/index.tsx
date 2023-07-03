@@ -68,7 +68,7 @@ const Page = () => {
 
     return (
         <>
-            <Seo hasChat title="Omkar DevTools" description='A Swiss Army knife for developers' />
+            <Seo hasChat title="Omkar DevTools" description='A Swiss Army Knife for developers' />
 
             <Component>
                 <Content />

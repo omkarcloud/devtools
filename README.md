@@ -29,13 +29,15 @@
 
 ---
 
-✨ Swiss Army knife for Developers. Format/Validate JSON, encode/decode Base64, debug JWT… with just one click!. 🚀
+✨ Swiss Army Knife for Developers. Format/Validate JSON, encode/decode Base64, debug JWT… with just one click!. 🚀
 
 ## 🚀 Getting Started
 
-Visit [https://www.omkar.cloud/devtools/](https://www.omkar.cloud/devtools/) to see Omkar Devtools in Action. 
+Get Started with Omkar DevTools by visiting [this link](https://www.omkar.cloud/devtools/).
 
-<!-- TODO: ADD IMAGE -->
+Also, bookmark Omkar DevTools for easy single click access when you need it.
+
+![Omkar DevTools](./images/bookmark-omkar-dev-tools.gif)
 
 ## 😎 Run it Locally 
 

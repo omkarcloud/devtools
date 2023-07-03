@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default function Seo({
   title = 'Omkar DevTools',
-  description = '✨ Swiss Army knife for Developers. Format/Validate JSON, encode/decode Base64, debug JWT… with just one click!. 🚀',
+  description = '✨ Swiss Army Knife for Developers. Format/Validate JSON, encode/decode Base64, debug JWT… with just one click!. 🚀',
   hasChat = false
 }) {
   return (
